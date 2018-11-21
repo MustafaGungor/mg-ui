@@ -1,0 +1,35 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+.mg-header{
+    width: 100%;
+    height: 50px;
+    background-color: #93a1a1;
+    color:white;
+    padding-top:10px;
+    padding-left: 10px;
+}
+.mg-header-logo{
+    font-size: 19px;
+    width: 15%;
+    float: left;
+}
+.mg-header-menu{
+    text-align: right;
+    width: 85%;
+    float: left;
+}
+.mg-header-menu li:hover{
+    background-color: red;
+}
+.mg-header-li{
+    display: inline-block;
+    padding-right: 25px;
+}
+.mg-container{
+
+}
+.mg-footer{
+
+}
