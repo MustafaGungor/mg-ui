@@ -1,4 +1,5 @@
 import * as React from "react";
+import ButtonX from "@material-ui/core/Button";
 
 export interface ButtonProps extends React.HTMLProps<HTMLButtonElement> {
     /**
@@ -52,20 +53,9 @@ export default class Button extends React.Component<any,any> {
      * @returns {any}
      */
     render():any {
-        return "button";
+        return <ButtonX {...this.props}/>;
     }
 
-    onClick(e:any){
-        let async = this.props.async != undefined ? (this.props.async == true ? true : false) : false;
-        async == true ? this.setState({async : true}) : null;
-        this.props.onClick != undefined ? (async == true ? this.props.onClick(e,this.done.bind(this)) : this.props.onClick(e)) : null;
-    }
-
-    done() {
-        this.setState({
-            async: false
-        });
-    }
 
 }
 
